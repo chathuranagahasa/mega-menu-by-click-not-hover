@@ -1,0 +1,238 @@
+
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-dropdown-icon:before {
+  content: "\f489";
+  font-family: "Ionicons";
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 1.5em 2em;
+  background: #fff;
+  color: #333333;
+}
+.menu > ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  padding: 1.5em 2.1em;
+  display: block;
+}
+.menu > ul > li > ul {
+  display: none;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  background: #eeeeee;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: none;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+  display: none;
+}
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+.menu > ul > li > ul > li a {
+  color: #676767 !important;
+  padding: 0.2em 0;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 0.8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+  width: 300px;
+  left: auto;
+  padding: 10px 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+
+.menu > ul > li a {
+  padding: 1.8em 1.5em !important;
+}
+
+
+#user_msg{
+  background-color: #333333;
+}
+
+#user_msg h3{
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+#user_msg ul {
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+#user_msg ul li a {
+  padding: 0.5em 0.5em !important;
+  border-bottom: none !important;
+  text-decoration: underline;
+  color: #C4C4C4 !important;
+}
+
+#user_msg p {
+  margin-bottom: 0;
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#user_msg h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+#top_section_dropmenu {
+  padding-top: 25px;
+}
+
+#top_section_dropmenu h3 {
+  color: #484848;
+  font-weight: 700;
+}
+
+#top_section_dropmenu h3 span {
+  color: #053d98;
+  font-weight: 700;
+}
+
+#top_section_dropmenu  .border_b_head {
+  border-bottom: 1px solid #d2d7da;
+  width: 80%;
+}
+
+.center_design {
+  padding: 5px;
+  padding-right: 60px;
+}
+
+.center_design:hover {
+  background-color: #CCCCCC;
+  margin-right: 60px;
+}
+
+.menu_right_arrow {
+  padding-left: 24px;
+  float: right;
+  margin-top: -50px;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-dropdown-icon:before {
+    display: none;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu > ul > li a {
+    padding: 1.5em;
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+}
